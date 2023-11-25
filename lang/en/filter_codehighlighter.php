@@ -1,6 +1,6 @@
 <?php
 
-$string['filtername'] = 'CodeHighlighter Filter';
-$string['pluginname'] = 'CodeHighlighter Filter';
+$string['filtername'] = 'Code Highlighter Filter 2.0';
+$string['pluginname'] = 'Code Highlighter Filter 2.0';
 
 ?>

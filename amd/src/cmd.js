@@ -1,14 +1,11 @@
-/*
-	Info:
-	keywords: max. 4 groups
-	
-    ver: 1.0 [2018.10.08]
-*/
+// Info:
+// keywords: max. 4 groups
+// ver: 1.0 [2018.10.08]
+// ver: 2.0 [2023.11.25]
 
 define([], function () {
-
     return {
-            ver: "1.0",
+            ver: "2.0",
             langname: 'Command Prompt',
             casesensitive: {
                 lv1: false,
@@ -27,7 +24,7 @@ define([], function () {
                 ],
                 lv2: [
                     'less','more','grep',
-			        'ifconfig','ifup','ifdown'
+                    'ifconfig','ifup','ifdown'
                 ],
                 lv3: [
                     'iface','static','dhcp','address','netmask',
@@ -39,6 +36,6 @@ define([], function () {
             intxt: 'lLuU',
             realxt: 'fF',
             comment: ['\\/\\/','#'],
-            multicomment: ['\\/\\*','\\*\\/'] //pair begin => end
-        }
+            multicomment: [] //pair begin => end
+        };
     });

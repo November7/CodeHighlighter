@@ -1,15 +1,11 @@
-/*
-	Info:
-	keywords: max. 4 groups
-	
-    ver: 0.1 [2018.08.24] 
-    first test
+// Info:
+// keywords: max. 4 groups
+// ver: 0.1 [2018.08.24]
+// ver: 2.0 [2023.11.25]
 
-*/
 define([], function () {
-
-return {
-        ver: "0.1",
+    return {
+        ver: "2.0",
         langname: 'C++',
         casesensitive: {
             lv1: true,
@@ -31,7 +27,7 @@ return {
             ],
             lv2: [
                 'char','bool','int','float','double','void','enum',
-                'struct','union',/*class,*/			
+                'struct','union',/*class,*/
                 'signed','unsigned','long','short',
                 'volatile','const','static','auto','register',
                 'virtual','friend',
@@ -51,5 +47,5 @@ return {
         realxt: 'fF',
         comment: ['\\/\\/','#'],
         multicomment: ['\\/\\*','\\*\\/'] //pair begin => end
-    }
+    };
 });

@@ -1,10 +1,8 @@
-/*
-	Info:
-	keywords: max. 4 groups
-	
-    ver: 0.1 [2022.11.26]
+// Info:
+// keywords: max. 4 groups
+// ver: 0.1 [2022.11.26]
+// ver: 2.0 [2023.11.25]
 
-*/
 define([], function () {
 
 return {
@@ -27,6 +25,7 @@ return {
                 'int','float','str'
             ],
             lv3: [
+                'import','as'
             ],
             lv4: [
                 'print','input'
@@ -38,5 +37,5 @@ return {
         realxt: 'fF',
         comment: ['#'],
         multicomment: [] //pair begin => end
-    }
+    };
 });
