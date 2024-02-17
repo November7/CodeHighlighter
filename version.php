@@ -2,7 +2,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 $plugin->release   = '2.0';
-$plugin->version   = 2023112502;        // The current plugin version (Date: YYYYMMDDXX)
+$plugin->version   = 2024021702;        // The current plugin version (Date: YYYYMMDDXX)
 $plugin->requires  = 2016051900;        // Requires this Moodle version
 $plugin->component = 'filter_codehighlighter'; // Full name of the plugin (used for diagnostics)
 

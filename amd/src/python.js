@@ -6,7 +6,7 @@
 define([], function () {
 
 return {
-        ver: "0.1",
+        ver: "2.0",
         langname: 'Python',
         casesensitive: {
             lv1: true,
@@ -18,14 +18,14 @@ return {
             lv1: [
                 'for','while',
                 'if','elif','else',
-                'using','namespace',
-                'return','true','false','null'
+                'return','True','False','null',"None",
+                "def","class","pass"
             ],
             lv2: [
                 'int','float','str'
             ],
             lv3: [
-                'import','as'
+                'import','as','self','cls'
             ],
             lv4: [
                 'print','input'
@@ -36,6 +36,6 @@ return {
         intxt: 'lLuU',
         realxt: 'fF',
         comment: ['#'],
-        multicomment: [] //pair begin => end
+        multicomment: ["\'\'\'","\'\'\'"] //pair begin => end
     };
 });
