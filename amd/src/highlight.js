@@ -34,7 +34,7 @@ define(['jquery'], function($) {
                 if($.inArray(langname, ['cpp','python','cmd','php']) < 0) {return;}
                 ////////////////////////////
                 let pres = $(this).find("td:eq(1) pre" );
-                require(['filter_codehighlighter/'+langname], function(lang_data) {
+                require(['filter_codehl_filter/'+langname], function(lang_data) {
                     if(lang_data == undefined) {return;}
                     let artx = [];
                     lang_data.text.forEach(function(el) {
