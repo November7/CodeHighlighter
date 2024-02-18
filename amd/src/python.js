@@ -18,14 +18,15 @@ return {
             lv1: [
                 'for','while',
                 'if','elif','else',
-                'return','True','False','null',"None",
-                "def","class","pass"
+                'return','True','False','None',
+                'def','class','pass','in','import','as',
+                'with','try','raise','finally','except'
             ],
             lv2: [
                 'int','float','str'
             ],
             lv3: [
-                'import','as','self','cls'
+                'self','cls','staticmethod','classmethod' //can't contain @ because of \b in regexp
             ],
             lv4: [
                 'print','input'
@@ -33,9 +34,9 @@ return {
         },
         number: '[0-9]+',
         text: ['"','\''],
-        intxt: 'lLuU',
-        realxt: 'fF',
+        intxt: '',
+        realxt: '',
         comment: ['#'],
-        multicomment: ["\'\'\'","\'\'\'"] //pair begin => end
+        multicomment: ["'''","'''"] //pair begin => end
     };
 });

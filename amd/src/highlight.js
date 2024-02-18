@@ -25,11 +25,11 @@ define(['jquery'], function($) {
             $(".chParser_JS").each(function() {
 
                 /// do przerobienia
-                window.console.log(this.className);
+                // window.console.log(this.className);
                 let re = RegExp("chLang_([a-zA-Z]+)","gm");
                 let strippedLangName;
                 strippedLangName = re.exec(this.className);
-                window.console.log("Lang "+strippedLangName[1]);
+                // window.console.log("Lang "+strippedLangName[1]);
                 let langname = strippedLangName[1];
                 if($.inArray(langname, ['cpp','python','cmd','php']) < 0) {return;}
                 ////////////////////////////
@@ -49,6 +49,7 @@ define(['jquery'], function($) {
                             ")\\b",lang_data.casesensitive[k]?"g":"gi"));
                         }
                     }
+                    // window.console.log(regky);
                     let regcm = [];
                     lang_data.comment.forEach(function(el) {
                         regcm.push(el+".*");
