@@ -6,7 +6,7 @@
 define([], function () {
 
 return {
-        ver: "2.0.2",
+        ver: "2.0.3",
         langname: 'Python',
         casesensitive: {
             lv1: true,
