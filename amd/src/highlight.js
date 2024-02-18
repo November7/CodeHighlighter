@@ -1,7 +1,7 @@
 define(['jquery'], function($) {
     return {
         init: function() {
-            window.console.log("highlight init 3.0");
+            // window.console.log("highlight init 3.0");
             $.fn.parseCodeSplit = function(regexp,type) {
                 let splitHtml = $(this).html().split(/(<span.*?\/span>)/gi);
                 for(let i=0;i<splitHtml.length;i+=2)
@@ -23,7 +23,6 @@ define(['jquery'], function($) {
                 return false;
             };
             $(".chParser_JS").each(function() {
-
                 /// do przerobienia
                 // window.console.log(this.className);
                 let re = RegExp("chLang_([a-zA-Z]+)","gm");
@@ -34,7 +33,7 @@ define(['jquery'], function($) {
                 if($.inArray(langname, ['cpp','python','cmd','php']) < 0) {return;}
                 ////////////////////////////
                 let pres = $(this).find("td:eq(1) pre" );
-                require(['filter_codehl_filter/'+langname], function(lang_data) {
+                require(['filter_codehighlighter/'+langname], function(lang_data) {
                     if(lang_data == undefined) {return;}
                     let artx = [];
                     lang_data.text.forEach(function(el) {
