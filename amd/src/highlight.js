@@ -22,7 +22,8 @@ define(['jquery'], function($) {
                 }
                 return false;
             };
-            $(".chParser_JS").each(function() {
+            // $(".chParser_JS").each(function() {
+            $(".codehl").each(function() {
                 /// do przerobienia
                 // window.console.log(this.className);
                 let re = RegExp("chLang_([a-zA-Z]+)","gm");
