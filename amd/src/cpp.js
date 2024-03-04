@@ -27,7 +27,7 @@ define([], function () {
             ],
             lv2: [
                 'char','bool','int','float','double','void','enum',
-                'struct','union',/*class,*/
+                'struct','union','class',
                 'signed','unsigned','long','short',
                 'volatile','const','static','auto','register',
                 'virtual','friend',
