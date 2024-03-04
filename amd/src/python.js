@@ -23,7 +23,9 @@ return {
                 'with','try','raise','finally','except'
             ],
             lv2: [
-                'int','float','str'
+                'int','float','str',
+                'bool','bytes','complex',
+                'list','touple','set','dict','range'
             ],
             lv3: [
                 'self','cls','staticmethod','classmethod' //can't contain @ because of \b in regexp
